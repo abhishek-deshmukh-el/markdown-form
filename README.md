@@ -1,42 +1,51 @@
-# Markdown → Interactive Form (React + Vite)
+Markdown Form
 
-Render **real, interactive HTML forms inside Markdown** using `react-markdown`, `remark-gfm`, and a **safe** `rehype-sanitize` schema extended for form tags/attrs.
+Description
 
-> Goal: author forms in markdown (docs, checklists, reviews) and let users fill and submit them right in the UI.
+This project demonstrates how to render interactive HTML forms directly within Markdown. It leverages the power of `react-markdown` and `remark-gfm` to parse and display the form elements. To ensure security, a `rehype-sanitize` schema is used and extended to safely handle form tags and attributes.
 
----
+Key Features
 
-## ✨ Features
+- Interactive Forms in Markdown: Seamlessly embed and render HTML forms in your Markdown files.
+- Secure: Utilizes `rehype-sanitize` to prevent unsafe HTML and XSS vulnerabilities.
+- React + Vite: Built with a modern and fast frontend toolchain.
 
-- ✅ Markdown with GFM (tables, checklists, etc.)
-- ✅ **Real `<form>` inputs**: `<input>`, `<select>`, `<textarea>`, `<button>`, `<fieldset>`, `<legend>`
-- ✅ Custom **sanitization schema** to allow safe form attributes
-- ✅ Event handling: capture `onSubmit` and input changes from markdown-rendered forms
-- 🔒 Security-first rendering via `rehype-sanitize`
+Technologies Used
 
----
+- React
+- Vite
+- react-markdown
+- remark-gfm
+- rehype-sanitize
 
-## 📦 Tech Stack
+Installation
 
-- React + Vite
-- [`react-markdown`](https://github.com/remarkjs/react-markdown)
-- [`remark-gfm`](https://github.com/remarkjs/remark-gfm)
-- [`rehype-raw`](https://github.com/rehypejs/rehype-raw) (for raw HTML in markdown)
-- [`rehype-sanitize`](https://github.com/rehypejs/rehype-sanitize) with **custom schema** for form elements
+1. Clone the repository:
+   git clone https://github.com/abhishek-deshmukh-el/markdown-form.git
 
----
+2. Navigate to the project directory:
+   cd markdown-form
 
-## 🚀 Quick Start
+3. Install the dependencies:
+   yarn
 
-```bash
-# install
-yarn
+Usage
 
-# dev
+Development
+
+To start the development server, run:
 yarn dev
 
-# build
+Build
+
+To create a production build, run:
 yarn build
 
-# preview production build
+Preview
+
+To preview the production build locally, run:
 yarn preview
+
+Contributing
+
+Contributions are welcome! Please feel free to open an issue or submit a pull request.
